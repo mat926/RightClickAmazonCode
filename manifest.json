@@ -8,11 +8,10 @@
 	},
 	"content_scripts" : [{
 		"js" : ["content.js"],
-		"matches" : ["<all_urls>"],
-		"run_at" : "document_start"
+		"matches" : ["<all_urls>"]
 	}],
-	"permissions": ["contextMenus", "scripting", "tabs"],
+	"permissions": ["contextMenus", "scripting"],
 	"host_permissions": [
-		"https://www.bing.com/*"
+		"https://www.amazon.com/gc/redeem"
 	  ]
 }
