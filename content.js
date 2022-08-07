@@ -1,5 +1,3 @@
-
-
 document.addEventListener("mousedown", function(event){
     //alert("hello world");
     var selection = window.getSelection().toString();
@@ -13,14 +11,3 @@ document.addEventListener("mousedown", function(event){
 document.addEventListener("DOMContentLoaded", (event) => {
 //alert("DOMContentLoaded")
 })
-
- chrome.runtime.onMessage.addListener(function(request,sender, sendResponse){
-    alert("received")
-    console.log("received")
-    document.getElementById('sb_form_q').value="hello world";
-    //     console.log(sender.tab ?
-//         "from a content script:" + sender.tab.url :
-//         "from the extension");
-//    // chrome.tabs.create({url : "https://www.google.com"});
-//     alert("dd")
- })
